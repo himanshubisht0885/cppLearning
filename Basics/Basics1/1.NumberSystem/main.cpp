@@ -7,7 +7,7 @@ int main(){
     int n4 = 0b00001111;
     std::cout<<"value of n1 is "<<n1<<std::endl;
     std::cout<<"value of n2 is "<<n2<<std::endl;
-    std::cout<<"value of n3 is "<<n3<<std::endl;
-    std::cout<<"value of n4 is "<<n4<<std::endl;
+    std::cout<<std::hex<<"value of n3 is "<<std::hex<<n3<<std::endl;
+    std::cout<<std::dec<<"value of n4 is "<<n4<<std::endl;
     return 0;
 }
