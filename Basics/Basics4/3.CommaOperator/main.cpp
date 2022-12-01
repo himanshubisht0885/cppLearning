@@ -11,6 +11,6 @@ int main(){
     std::cout<<" b : "<<b<<std::endl;
     std::cout<<" c : "<<c<<std::endl;
     std::cout<<" d : "<<d<<std::endl;
-    std::cout<<" result : "<<result<<std::endl;
+    std::cout<<" result : "<<result<<std::endl;  // TAKES VALUE OF LAST EXPRESION OF THE LIST EXPRESSION
     return 0;
 }
