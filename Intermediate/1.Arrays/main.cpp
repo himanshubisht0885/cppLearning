@@ -3,7 +3,7 @@
 
 int main(){
     //declaring and array
-    int scores[20]; //an array of size 10
+    int scores[5]; //an array of size 10
     //writing data in an array
     scores[0] = 0;
     scores[1] = 10;
@@ -16,6 +16,9 @@ int main(){
     for(size_t i {}; i<sizeof(scores) ;++i){
         std::cout<<"scores["<<i<<"] :"<<scores[i]<<std::endl;//un initialised array index has junk data
     }
-    std::cout<<sizeof(int)<<std::endl;
+    double salary [5] {12.4,12.5,16.5,20.4,40.5};
+    for (double i : salary){
+        std::cout<<"salary :"<<i<<std::endl;
+    }
     return 0;
 }
