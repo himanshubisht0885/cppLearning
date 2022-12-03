@@ -13,12 +13,21 @@ int main(){
     scores [22] = 220;
     std::cout<<std::endl;
     std::cout<<"Manually writing data in array : "<<std::endl;
+    //reading put data
     for(size_t i {}; i<sizeof(scores) ;++i){
         std::cout<<"scores["<<i<<"] :"<<scores[i]<<std::endl;//un initialised array index has junk data
     }
     double salary [5] {12.4,12.5,16.5,20.4,40.5};
-    for (double i : salary){
+    double sum;
+    for (double i : salary){ //range based for loop
         std::cout<<"salary :"<<i<<std::endl;
+        sum+=i;
     }
+    std::cout<<sum<<std::endl;
+
+    //ommit the aize of the array at declaration
+
+    int m [] {1,4,5,6,4,1}; //works
+    //int n []; //doesn't work
     return 0;
 }
