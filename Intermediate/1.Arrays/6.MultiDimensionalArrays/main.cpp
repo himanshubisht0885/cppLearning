@@ -3,23 +3,34 @@
 
 
 int main(){
-    int num = std::rand(); //generates a number between 0 and RAND_MAX
-    std::cout<<"number : "<<num<<std::endl;
-    int randm = RAND_MAX;
-    std::cout<<"RAND_MAX : "<<randm<<std::endl;
-    int num2 = std::rand()%11; //between [0-10]
-    std::cout<<"number2 : "<<num2<<std::endl;
-    for(size_t i {}; i<10; ++i){
-        num2 = std::rand()%11; //between [0-10]
-        std::cout<<"  |number2 : "<<num2;
+    //declaring 2d array
+    int arr [4] [3] {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9},
+        {10,11,12}
+    };
+    std::cout<<"size of arr : "<<sizeof(arr)<<std::endl;
+    std::cout<<"elements count in arr : "<<std::size(arr)<<std::endl;
+    //reading out elements of array
+    for(size_t i{};i<4;++i){
+        for (size_t j{}; j<3;++j){
+            std::cout<<"value of element at ["<<i<<"]"<<"["<<j<<"] : "<<arr[i][j]<<std::endl;
+        }
     }
-    std::cout<<"non repeating random values"<<std::endl;
-    std::srand(std::time(0)); //seed
-    num2 = std::rand()%11; //between [0-10]
-    std::cout<<"number2 : "<<num2<<std::endl;
-    for(size_t i {}; i<10; ++i){
-        num2 = std::rand()%11; //between [0-10]
-        std::cout<<"  |number2 : "<<num2;
+    //declaring 3d array
+    int arr1 [4] [3] [2] {
+        {{1,2},{3,4},{5,6}},
+        {{7,8},{9,10},{11,12}},
+        {{13,14},{15,16},{17,18}},
+        {{19,20},{21,22},{23,24}}
+    };
+    for(size_t i{};i<4;++i){
+        for (size_t j{}; j<3;++j){
+            for (size_t z {}; z<2;++z)
+                std::cout<<"value of element at ["<<i<<"]"<<"["<<j<<"]"<<"["<<z<<"] : "<<arr1[i][j][z]<<std::endl;
+        }
     }
+
     return 0;
 }
