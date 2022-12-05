@@ -21,5 +21,14 @@ int main(){
         }
         std::cout<<std::endl;
     }
+    //using c-string ; eliminates unsafe printing ; auto null termination
+    char k [] [n+1]{
+        "john",
+        "hello",
+        "hii"
+    };
+    for(size_t i {}; i<std::size(k); ++i){
+        std::cout<<k[i]<<std::endl;
+    }
     return 0;
 }
