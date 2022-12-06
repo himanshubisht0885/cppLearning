@@ -11,5 +11,8 @@ int main(){
    const char *z = {"hello"};
    std::cout<<"value of z : "<<z<<std::endl;
    std::cout<<"value of *z : "<<*z<<std::endl; //return first liiter of string
+    // string literal made of const char . trying modifying any of them will result in disaster!
+    *z = 'b'; // edit to say bello
+    std::cout<<"value of *z : "<<*z<<std::endl;
     return 0;
 }
