@@ -6,6 +6,9 @@ int main(){
         "abc",
         "xyz"
     };
+    for (const char * k : p ){
+        std::cout<<k<<std::endl;
+    }
     std::cout<<p<<std::endl;
     std::cout<<*p<<std::endl;
     std::cout<<*p[0]<<std::endl;
@@ -16,6 +19,9 @@ int main(){
     std::cout<<p<<std::endl;
     std::cout<<*p<<std::endl;
     std::cout<<*p[0]<<std::endl;
+    for (const char * k : p ){
+        std::cout<<k<<std::endl;
+    }
 
 
     return 0;
