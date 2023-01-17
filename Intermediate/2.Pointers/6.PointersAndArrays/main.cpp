@@ -1,4 +1,7 @@
 #include <iostream>
+#include <cstring>
+#include <bits.h>
+
 
 int main(){
     const char * p [] {
@@ -16,6 +19,8 @@ int main(){
     std::cout<<p<<std::endl;
     std::cout<<*p<<std::endl;
     std::cout<<*p[0]<<std::endl;
+    const unsigned int a {3};
+    const unsigned int b {3};
 
 
     return 0;
