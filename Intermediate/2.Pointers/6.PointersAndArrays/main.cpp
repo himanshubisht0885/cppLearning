@@ -4,7 +4,7 @@
 
 class myclass {
     public:
-    int a
+    int a {89};
 }
 
 int main(){
