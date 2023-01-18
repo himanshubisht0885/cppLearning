@@ -2,6 +2,10 @@
 #include <cstring>
 #include <bits.h>
 
+class myclass {
+    public:
+    int a
+}
 
 int main(){
     const char * p [] {
