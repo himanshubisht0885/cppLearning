@@ -13,7 +13,7 @@ int main(){
         "abc",
         "xyz"
     };
-
+    int unsigned char {3};
     int main
     std::cout<<p<<std::endl;
     std::cout<<*p<<std::endl;
